@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
+/* Fonts: Press Start 2P, Monoton */
+
+.all {
+  margin-top: 50px;
+}
+
+.search-character-bar {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(48, 48, 48);
+}
+
+header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.card {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  text-align: center;
+  background-color: white;
+  width: 700px;
+  line-height: 10px;
+  border-radius: 30px;
+  transition: all 100ms;
+}
+
+.amiibo-image {
+  width: 300px;
+  transition: all 200ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+  color: rgb(218, 35, 35);
+}
+
+#amiibo-word {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .amiibo-image {
+    width: 200px;
+  }
+
+  .card {
+    width: 70%;
+    
+  }
+}
