@@ -1,46 +1,3 @@
-/* FINALLY WORKS - save this version !! */
-
-// fetch('https://www.amiiboapi.com/api/amiibo/?name=luigi')
-// .then((res) => res.json())
-// .then((data) => {
-//   console.log(data.amiibo[0].character);
-// })
-
-/* THIS USES A FOR LOOP TO GO THROUGH JSON - WORKS */
-
-// fetch('https://www.amiiboapi.com/api/amiibo/?name=luigi')
-// .then((res) => res.json())
-// .then((data) => {
-//   console.log(data.amiibo);
-  
-//   for (let i = 0; i < data.amiibo.length; i++) {
-//     console.log(data.amiibo[i].character);
-//     console.log("hello");
-//   }
-// })
-
-/* AND FINALL THIS WORKS!!!! */
-
-// fetch('https://www.amiiboapi.com/api/amiibo/')
-// .then((res) => res.json())
-// .then((data) => {
-//   console.log(data.amiibo);
-  
-//   let output = '<h2>All Amiibo</h2>';
-//   for (let i = 0; i < 100; i++) {
-//     console.log(data.amiibo);
-//     output += `
-//       <ul>
-//         <img src="${data.amiibo[i].image}" alt="" style="width: 100px">
-//         <li>Character: ${data.amiibo[i].character}</li>
-//         <li>Name: ${data.amiibo[i].name}</li>
-//         <li>Game: ${data.amiibo[i].gameSeries}</li>
-//       </ul>
-//     `
-//     document.getElementById('output').innerHTML = output;
-//   }
-// })
-
 var count = 1;
 loadPage();
 
@@ -100,6 +57,8 @@ async function getAmiibo() {
 
 
 
+
+
 /* This gets all amiibo from 1 - n */
 
 // fetch('https://www.amiiboapi.com/api/amiibo')
@@ -131,5 +90,48 @@ async function getAmiibo() {
   
 // })
 
+
+/* WORKS */
+
+// fetch('https://www.amiiboapi.com/api/amiibo/?name=luigi')
+// .then((res) => res.json())
+// .then((data) => {
+//   console.log(data.amiibo[0].character);
+// })
+
+/* THIS USES A FOR LOOP TO GO THROUGH JSON - WORKS */
+
+// fetch('https://www.amiiboapi.com/api/amiibo/?name=luigi')
+// .then((res) => res.json())
+// .then((data) => {
+//   console.log(data.amiibo);
+  
+//   for (let i = 0; i < data.amiibo.length; i++) {
+//     console.log(data.amiibo[i].character);
+//     console.log("hello");
+//   }
+// })
+
+/* WORKING */
+
+// fetch('https://www.amiiboapi.com/api/amiibo/')
+// .then((res) => res.json())
+// .then((data) => {
+//   console.log(data.amiibo);
+  
+//   let output = '<h2>All Amiibo</h2>';
+//   for (let i = 0; i < 100; i++) {
+//     console.log(data.amiibo);
+//     output += `
+//       <ul>
+//         <img src="${data.amiibo[i].image}" alt="" style="width: 100px">
+//         <li>Character: ${data.amiibo[i].character}</li>
+//         <li>Name: ${data.amiibo[i].name}</li>
+//         <li>Game: ${data.amiibo[i].gameSeries}</li>
+//       </ul>
+//     `
+//     document.getElementById('output').innerHTML = output;
+//   }
+// })
 
 
